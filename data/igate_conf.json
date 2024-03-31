@@ -1,37 +1,43 @@
 {
-    "callsign": "NOCALL-10",
+    "callsign": "MB7UCW-10",
     "wifi": {
         "autoAP": {
             "password": "1234567890",
             "powerOff": 10
         },
-        "AP": []
+        "AP": [
+            {   "ssid": "Duncreggan",
+            "password": "isleofskye",
+            "latitude": 53.09083,
+            "longitude": -2.48083
+        }        
+        ]
     },
     "beacon": {
-        "latitude": 0.0,
-        "longitude": 0.0,
+        "latitude": 53.09083,
+        "longitude": -2.48083,
         "comment": "LoRa APRS",
         "interval": 15,
         "overlay": "L",
         "symbol": "a",
         "path": "WIDE1-1",
-        "sendViaAPRSIS": false,
-        "sendViaRF": false
+        "sendViaAPRSIS": true,
+        "sendViaRF": true
     },
     "digi": {
-        "mode": 0
+        "mode": 2
     },
     "aprs_is": {
-        "active": false,
-        "passcode": "XYZVW",
-        "server": "rotate.aprs2.net",
+        "active": true,
+        "passcode": "19106",
+        "server": "euro.aprs2.net",
         "port": 14580,
         "filter": "m/10",
         "toRF": false
     },
     "lora": {
-        "txFreq": 433775000,
-        "rxFreq": 433775000,
+        "txFreq": 439912500,
+        "rxFreq": 439912500,
         "spreadingFactor": 12,
         "signalBandwidth": 125000,
         "codingRate4": 5,
@@ -40,8 +46,8 @@
         "rxActive": true
     },
     "display": {
-        "alwaysOn": true,
-        "timeout": 4,
+        "alwaysOn": false,
+        "timeout": 60,
         "turn180": false
     },
     "syslog": {
@@ -53,11 +59,11 @@
         "active": false
     },
     "ota": {
-        "username": "",
-        "password": ""
+        "username": "jon",
+        "password": "GB7OMNbbs23"
     },
     "other": {
-        "rememberStationTime": 30,
+        "rememberStationTime": 1440,
         "sendBatteryVoltage": false,
         "externalVoltageMeasurement": false,
         "externalVoltagePin": 34
